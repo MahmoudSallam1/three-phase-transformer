@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*=========================== overriding the default browser selection with our color palette=========== */
+::selection {
+    color: #fff;
+    background: #1b8ccc;
+}
+
+::-moz-selection {
+    color: #fff;
+    background: #1b8ccc;
+}
+
+html,
+body {
+    color: rgb(71, 71, 71);
+    font-family: 'Lato', 'Arial';
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: ' ';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+section {
+    padding: 80px 0;
+
+}
+
+strong{
+    color: #1b8ccc;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(img/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.hero-text-box h2{
+    color: #fff;
+    font-weight: bold;
+    margin: 0 auto;
+   margin-bottom: 75px;
+}
+
+.hero-text-box  p{
+    margin-top: 40px;
+    color: #fff;
+
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.logo2 {
+    height: 60px;
+    width: auto;
+    float: right;
+    margin-top: 35px;
+}
+
+
+/* ======nav bar================ */
+
+
+
+/* ================adding sticky nav class uing jquery================== */
+
+
+
+
+h1,
+h2
+ {
+
+
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 30px;
+
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+.icon-big {
+    font-size: 250%;
+    display: block;
+    color: #1b8ccc;
+    margin-bottom: 10px;
+}
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #1b8ccc;
+    font-size: 100%;
+    margin-right: 10px;
+}
+
+a:link,
+a:visited {
+    color: #1b8ccc;
+    text-decoration: none;
+    padding-bottom: 1px;
+    /* border-bottom: 1px solid #1b8ccc; */
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    /* border-bottom: 1px solid transparent; */
+}
+
+/* adding content using only css */
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: #1b8ccc;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box {
+    padding: 1%;
+}
+
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #1b8ccc;
+    border: 1px solid #1b8ccc;
+    color: #fff;
+    margin-right: 15px;
+
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #1b8ccc;
+    color: #1b8ccc;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #211551;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit] {
+    border: 1px solid #211551;
+
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #211551;
+    color: #fff;
+}
+
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+
+
+/* =========meals=============================== */
+.section-meals {
+    padding: 0;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meal-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.meal-photo img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+
+
+
+/* ==================connections================================= */
+.section-connections {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(img/back-customers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote::before {
+    /* https://css-tricks.com/snippets/html/glyphs/ */
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+
+/* ===============contact form=================================== */
+.contact-form {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+   
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+/* ===================footer========================================= */
+footer {
+    background-color: #1b8ccc;
+    padding: 50px;
+    font-size: 80%;
+}
+
+
+
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ================animation =================*/
+.js--wp-1,
+.js--wp-2,
+.js--wp-3{
+    opacity: 0;
+    animation-duration: 1s;
+}
+.js--wp-4{
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated{
+    opacity: 1;
+}
+
+
+
+/* =====================results====================== */
+
+#results{
+    background-color: #EEEEEE;
+}
+
+h3{
+    font-weight: 300;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+span{
+    color: #1b8ccc;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.btn-back{
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-left: 300px;
+}
+
+
+
+#calculate{
+    height: 75vh;
+    background-color:#EEEEEE ;
+}
+
+.trans{
+    font-size: 100%;
+}
+

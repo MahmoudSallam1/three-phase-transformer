@@ -1,0 +1,37 @@
+<script>
+    window.addEventListener('load', (event) => {
+        $("#y_y").show();
+        $("#y_d").hide();
+        $("#d_y").hide();
+        $("#d_d").hide();
+    });
+
+
+    $('#type__connection').on('change', function () {
+
+        if ($(this).val() === "y_y") {
+            $("#y_y").show();
+            $("#y_d").hide();
+            $("#d_y").hide();
+            $("#d_d").hide();
+        } else if ($(this).val() === "y_d") {
+            $("#y_d").show();
+            $("#y_y").hide();
+            $("#d_y").hide();
+            $("#d_d").hide();
+        } else if ($(this).val() === "d_y") {
+            $("#d_y").show();
+            $("#y_y").hide();
+            $("#y_d").hide();
+            $("#d_d").hide();
+        } else if ($(this).val() === "d_d") {
+            $("#d_d").show();
+            $("#y_y").hide();
+            $("#y_d").hide();
+            $("#d_y").hide();
+        } else {
+            console.log('Hello');
+
+        }
+    });
+</script>

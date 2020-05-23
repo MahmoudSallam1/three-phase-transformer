@@ -1,0 +1,157 @@
+<%- include('header') %>
+
+
+<header>
+    <nav>
+        <div class="row">
+            <img class="logo" src="resources/img/logo-white.png" alt="">
+            <img class="logo2" src="resources/img/nu-logo.png" alt="">
+
+
+        </div>
+    </nav>
+    <div class="hero-text-box">
+        <h2>ECEN-403 Project</h2>
+        <h1> Welcome to 3-Phase <span class="trans">Transformer </span> Calculator!</h1>
+        <a class="btn btn-full js--scroll-to-plans" href="#calculate">Calculate Now </a>
+        <!-- <a class="btn btn-ghost js--scroll-to-start" href="">Show me more </a> -->
+
+        <p>Electric Machines (ECEN 403)-Spring 2020         <em>
+           <br> Under Supervision of Associate Professor Dr. Heba Ahmed Hassan
+        </em></p>
+
+
+    </div>
+</header>
+
+<section class="section-features js--section-features" id="features">
+    <div class="row ">
+        <h2>3-Phase &mdash; Transformer.</h2>
+        <p class="long-copy">Almost all the major power generation and distribution systems in the world today
+            are three-phase ac systems. Since three-phase systems play such an important role
+            in modern life, it is necessary to understand how transformers are used in them.
+            Transformers for three-phase circuits can be constructed in one of two
+            ways. One approach is simply to take three single-phase transformers and connect
+            them in a three-phase bank. An alternative approach is to make a three-phase
+            transformer consisting of three sets of windings wrapped on a common core.
+        </p>
+    </div>
+
+
+
+
+
+
+</section>
+
+
+<section class="section-connections" id="connectons">
+    <div class="row">
+        <h2>Three-Phase Transformer Connections</h2>
+    </div>
+    <div class="row">
+        <div class="col span-1-of-4">
+            <blockquote>
+                WYE-WYE CONNECTION
+            </blockquote>
+        </div>
+        <div class="col span-1-of-4">
+            <blockquote>
+                WYE-DELTA CONNECTION
+            </blockquote>
+        </div>
+        <div class="col span-1-of-4">
+            <blockquote>
+                DELTA-WYE CONNECTION.
+            </blockquote>
+        </div>
+        <div class="col span-1-of-4">
+            <blockquote>
+                DELTA-DELTA CONNECTION
+            </blockquote>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- =====================Make your Calculations========================= -->
+
+<section class="section-form" id="calculate">
+    <div class="row">
+        <h2>Make Your Calculations Here!</h2>
+    </div>
+    <div class="row">
+        <form action="/" method="POST" class="contact-form">
+            <!-- ==================type of connections====================== -->
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="type__connection">Type of Transformer Connections</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <select name="type__connection" id="type__connection">
+                        <option value="y_y" selected> WYE-WYE CONNECTION
+                        </option>
+                        <option value="y_d"> WYE-DELTA CONNECTION
+                        </option>
+                        <option value="d_y"> DELTA-WYE CONNECTION.
+                        </option>
+                        <option value="d_d"> DELTA-DELTA CONNECTION
+                        </option>
+                    </select>
+                </div>
+
+            </div>
+
+            
+
+            <%- include('types/y_y') %>
+            <%- include('types/y_d') %>
+            <%- include('types/d_y') %>
+            <%- include('types/d_d') %>
+
+
+
+
+
+
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="">&nbsp;</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input type="submit" value="Calculate Now ">
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+<section class="section-team" id="team">
+    <div class="row">
+        <h2>Team Members and Contribution</h2>
+    </div>
+    <div class="row team">
+        <div class="col span-1-of-3">
+            <cite> <img src="resources/img/customer-3.jpg" alt=""> Mahmoud Sallam | App & GUI Developer
+         </cite>
+        </div>
+        <div class="col span-1-of-3">
+            <cite> <img src="resources/img/customer-1.jpg" alt=""> Mohamed Hossam | MatLab Simulation</cite>
+        </div>    <div class="col span-1-of-3">
+            <cite> <img src="resources/img/customer-2.jpg" alt=""> Eslam Mohamed | Documentation</cite>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<%- include('footer') %>
+<%- include('logic') %>
