@@ -49,53 +49,63 @@
 
 
 
-        <!-- d_y -->
-        <%  if (type_of_connection === 'd_y') { %>
+    <!-- d_y -->
+    <%  if (type_of_connection === 'd_y') { %>
 
 
-            <h3>[User's Inputs]</h3>
-            <h3>The V-line_primary = <span> <%=d__y_calc.vl_primary %> </span> Volt</h3>
-            <h3>The Transformer Rating = <span> <%=d__y_calc.trans_rating %> </span> KVA</h3>
-            <h3>The Frequency = <span> <%=d__y_calc.frequency %> </span>Hz</h3>
-            <h3>The Turns Ratio = <span> <%=d__y_calc.turns_ratio %> </span></h3>
-        
-            <h3> [=========================User's Outputs========================]</h3>
-        
-        
-            <h3>The V-phase_primary = <span> <%=d__y_results.vp_primary %> </span> Volt</h3>
-            <h3>The V-line_secondary = <span> <%=d__y_results.vl_secondary %> </span> Volt</h3>
-            <h3>The V-phase_secondary = <span> <%=d__y_results.vp_secondary %> </span> Volt</h3>
-            <h3>The I-line_primary = <span> <%=d__y_results.il_primary %> </span> A</h3>
-            <h3>The I-phase_primary = <span> <%=d__y_results.ip_primary %> </span> A</h3>
-            <h3>The I-line_secondary = <span> <%=d__y_results.il_secondary %> </span> A</h3>
+    <h3>[User's Inputs]</h3>
+    <h3>The V-line_primary = <span> <%=d__y_calc.vl_primary %> </span> Volt</h3>
+    <h3>The Transformer Rating = <span> <%=d__y_calc.trans_rating %> </span> KVA</h3>
+    <h3>The Frequency = <span> <%=d__y_calc.frequency %> </span>Hz</h3>
+    <h3>The Turns Ratio = <span> <%=d__y_calc.turns_ratio %> </span></h3>
 
-            <% } %>
+    <h3> [=========================User's Outputs========================]</h3>
 
 
+    <h3>The V-phase_primary = <span> <%=d__y_results.vp_primary %> </span> Volt</h3>
+    <h3>The V-line_secondary = <span> <%=d__y_results.vl_secondary %> </span> Volt</h3>
+    <h3>The V-phase_secondary = <span> <%=d__y_results.vp_secondary %> </span> Volt</h3>
+    <h3>The I-line_primary = <span> <%=d__y_results.il_primary %> </span> A</h3>
+    <h3>The I-phase_primary = <span> <%=d__y_results.ip_primary %> </span> A</h3>
+    <h3>The I-line_secondary = <span> <%=d__y_results.il_secondary %> </span> A</h3>
+
+    <% } %>
 
 
-            
-        <!-- d_d -->
-        <%  if (type_of_connection === 'd_d') { %>
 
 
-            <h3>[User's Inputs]</h3>
-            <h3>The V-line_primary = <span> <%=d__d_calc.vl_primary %> </span> Volt</h3>
-            <h3>The Transformer Rating = <span> <%=d__d_calc.trans_rating %> </span> KVA</h3>
-            <h3>The Frequency = <span> <%=d__d_calc.frequency %> </span>Hz</h3>
-            <h3>The Turns Ratio = <span> <%=d__d_calc.turns_ratio %> </span></h3>
-        
-            <h3> [=========================User's Outputs========================]</h3>
-        
-        
-            <h3>The V-phase_primary = <span> <%=d__d_results.vp_primary %> </span> Volt</h3>
-            <h3>The V-line_secondary = <span> <%=d__d_results.vl_secondary %> </span> Volt</h3>
-            <h3>The I-line_primary = <span> <%=d__d_results.il_primary %> </span> A</h3>
-            <h3>The I-phase_primary = <span> <%=d__d_results.ip_primary %> </span> A</h3>
-            <h3>The I-line_secondary = <span> <%=d__d_results.il_secondary %> </span> A</h3>
-            <h3>The I-phase_secondary = <span> <%=d__d_results.ip_secondary %> </span> A</h3>
-            
-            <% } %>
+
+    <!-- d_d -->
+    <%  if (type_of_connection === 'd_d') { %>
+
+
+    <h3>[User's Inputs]</h3>
+    <h3>The V-line_primary = <span> <%=d__d_calc.vl_primary %> </span> Volt</h3>
+    <h3>The Transformer Rating = <span> <%=d__d_calc.trans_rating %> </span> KVA</h3>
+    <h3>The Frequency = <span> <%=d__d_calc.frequency %> </span>Hz</h3>
+    <h3>The Turns Ratio = <span> <%=d__d_calc.turns_ratio %> </span></h3>
+
+    <h3> [=========================User's Outputs========================]</h3>
+
+
+    <h3>The V-phase_primary = <span> <%=d__d_results.vp_primary %> </span> Volt</h3>
+    <h3>The V-line_secondary = <span> <%=d__d_results.vl_secondary %> </span> Volt</h3>
+    <h3>The I-line_primary = <span> <%=d__d_results.il_primary %> </span> A</h3>
+    <h3>The I-phase_primary = <span> <%=d__d_results.ip_primary %> </span> A</h3>
+    <h3>The I-line_secondary = <span> <%=d__d_results.il_secondary %> </span> A</h3>
+    <h3>The I-phase_secondary = <span> <%=d__d_results.ip_secondary %> </span> A</h3>
+
+    <% } %>
+
+
+
+    <div style="text-align: center; margin-top: 35px;">
+        <a class="btn btn-full js--scroll-to-plans" href="/">Re-Calculate </a>
+
+    
+    
+    
+    </div>
 
 
 
