@@ -43,7 +43,7 @@ app.post('/', function (req, res) {
     let y__y_vp_primary, y__y_vl_secondary, y__y_vp_secondary, y__y_ip_primary, y__y_ip_secondary;
 
     y__y_vp_primary = Math.round(y__y_calc.vl_primary/Math.sqrt(3));
-    y__y_vl_secondary = Math.round(y__y_calc.vl_primary * y__y_calc.turns_ratio);
+    y__y_vl_secondary = Math.round(y__y_calc.vl_primary / y__y_calc.turns_ratio);
     y__y_vp_secondary = Math.round(y__y_vl_secondary / Math.sqrt(3));
     y__y_ip_primary = Math.round((y__y_calc.trans_rating * 1000) / (y__y_calc.vl_primary * Math.sqrt(3)));
     y__y_ip_secondary = Math.round( y__y_ip_primary * y__y_calc.turns_ratio);
@@ -75,7 +75,7 @@ app.post('/', function (req, res) {
     y__d_vp_primary = Math.round(y__d_calc.vl_primary/Math.sqrt(3));
     y__d_vl_secondary = Math.round(y__d_calc.vl_primary/ (y__d_calc.turns_ratio*Math.sqrt(3)));
     y__d_ip_primary = Math.round((y__d_calc.trans_rating * 1000) / (y__d_calc.vl_primary * Math.sqrt(3)));
-    y__d_il_secondary = Math.round( y__d_ip_primary / Math.sqrt(3) * y__d_calc.turns_ratio);
+    y__d_il_secondary = Math.round( y__d_ip_primary * Math.sqrt(3) * y__d_calc.turns_ratio);
     y__d_ip_secondary = Math.round(y__d_il_secondary / Math.sqrt(3));
 
     let y__d_results = {
