@@ -178,7 +178,7 @@ app.post('/', function (req, res) {
 
 
 
-// ==================SERVER LISTENING ON PORT 8080====================================
+// ==================SERVER LISTENING ON PORT 3000====================================
 app.listen(process.env.PORT ||3000, function () {
   console.log('App listening on port 3000!');
 });
